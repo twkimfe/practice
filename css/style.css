@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 * {
     margin: 0;                  /* 마진값 초기화 */
     padding: 0;                 /* 패딩값 초기화 */
     box-sizing: border-box;     /* 박스 영역은 테두리까지 지정 */
 }
+
+a {
+    text-decoration: none;
+}
+
 #container {
     margin: 0 auto;             /* 화면 중앙 배치 */
     width: 1200px;              /* 너비 지정 */
@@ -12,7 +19,7 @@
 header {
     width: 100%;                /* 너비 */
     height: 100px;              /* 높이 */
-    background-color: blue;
+    background-color: #07c;
 }
 
 /* 로고 영역 */
@@ -20,7 +27,16 @@ header {
     float: left;                /* 왼쪽으로 폴로팅 */
     width: 250px;               /* 너비 */
     height: 100px;              /* 높이 */
-    background-color: indigo;
+    line-height: 100px;         /* height값과 같게 만들어서 세로로 중간에 오도록 맞춤 */
+    padding-left: 20px;         /* 왼쪽 패딩 지정 */
+}
+
+#logo h1{
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 40px;            /* 폰트 크기 */
+    color: #fff;              /* 폰트 색상 */
+    text-shadow: 0 -1px 0 #222;     /* 그림자 색 */
 }
 
 /* 네비게이션 영역 */
